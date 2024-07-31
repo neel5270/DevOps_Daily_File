@@ -1,0 +1,207 @@
+===== System Metrics Collection =====
+CPU Usage:
+top - 11:13:48 up 21:00,  1 user,  load average: 0.66, 1.07, 1.02
+Tasks: 463 total,   1 running, 462 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.4 us,  3.6 sy,  0.0 ni, 90.5 id,  0.6 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :  15744.6 total,    368.7 free,   5857.2 used,   9518.7 buff/cache
+MiB Swap:  15259.0 total,  15258.5 free,      0.5 used.   8824.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+ 138676 einfoch+  20   0   13352   4224   3328 R  15.8   0.0   0:00.06 top
+   2120 root      20   0 3902204 136968  62248 S  10.5   0.8  12:36.39 dockerd
+   4482 einfoch+  20   0 6564584 878556 149440 S  10.5   5.4  17:20.73 gnome-shell
+
+Memory Utilization:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       5.7Gi       368Mi       730Mi       9.3Gi       8.6Gi
+Swap:           14Gi       0.0Ki        14Gi
+
+Disk Space:
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           1.6G  3.4M  1.6G   1% /run
+/dev/nvme0n1p1   94G   28G   62G  31% /
+tmpfs           7.7G  151M  7.6G   2% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+efivarfs        374K  122K  248K  33% /sys/firmware/efi/efivars
+/dev/nvme0n1p3  976M  6.1M  969M   1% /boot/efi
+/dev/nvme0n1p4  359G  5.5G  336G   2% /home
+tmpfs           1.6G  196K  1.6G   1% /run/user/1000
+
+Network Statistics:
+Ip:
+    Forwarding: 1
+    630389 total packets received
+    1169 forwarded
+    0 incoming packets discarded
+    629208 incoming packets delivered
+    912137 requests sent out
+    20 outgoing packets dropped
+    80 dropped because of missing route
+Icmp:
+    909 ICMP messages received
+    0 input ICMP message failed
+    ICMP input histogram:
+        destination unreachable: 897
+        echo replies: 12
+    2739 ICMP messages sent
+    0 ICMP messages failed
+    OutRateLimitHost: 616
+    ICMP output histogram:
+        destination unreachable: 2715
+        echo requests: 24
+IcmpMsg:
+        InType0: 12
+        InType3: 897
+        OutType3: 2715
+        OutType8: 24
+Tcp:
+    34572 active connection openings
+    198 passive connection openings
+    207 failed connection attempts
+    1306 connection resets received
+    30 connections established
+    749114 segments received
+    673473 segments sent out
+    2388 segments retransmitted
+    87 bad segments received
+    5071 resets sent
+Udp:
+    279898 packets received
+    3325 packets to unknown port received
+    0 packet receive errors
+    595992 packets sent
+    0 receive buffer errors
+    0 send buffer errors
+    IgnoredMulti: 1879
+UdpLite:
+TcpExt:
+    56 packets pruned from receive queue because of socket buffer overrun
+    3069 TCP sockets finished time wait in fast timer
+    51 packetes rejected in established connections because of timestamp
+    2828 delayed acks sent
+    1 delayed acks further delayed because of locked socket
+    Quick ack mode was activated 370 times
+    103509 packet headers predicted
+    83132 acknowledgments not containing data payload received
+    55453 predicted acknowledgments
+    TCPSackRecovery: 17
+    Detected reordering 14 times using SACK
+    Detected reordering 1 times using time stamp
+    1 congestion windows fully recovered without slow start
+    1 congestion windows partially recovered using Hoe heuristic
+    TCPDSACKUndo: 4
+    42 congestion windows recovered without slow start after partial ack
+    TCPLostRetransmit: 737
+    TCPSackFailures: 11
+    47 fast retransmits
+    8 retransmits in slow start
+    TCPTimeouts: 1950
+    TCPLossProbes: 1164
+    TCPLossProbeRecovery: 57
+    TCPBacklogCoalesce: 2481
+    TCPDSACKOldSent: 458
+    TCPDSACKOfoSent: 30
+    TCPDSACKRecv: 669
+    TCPDSACKOfoRecv: 1
+    1501 connections reset due to unexpected data
+    1160 connections reset due to early user close
+    145 connections aborted due to timeout
+    TCPSACKDiscard: 1
+    TCPDSACKIgnoredNoUndo: 368
+    TCPSpuriousRTOs: 1
+    TCPSackShifted: 6
+    TCPSackMerged: 12
+    TCPSackShiftFallback: 66
+    IPReversePathFilter: 5
+    TCPRcvCoalesce: 178657
+    TCPOFOQueue: 71004
+    TCPOFOMerge: 30
+    TCPChallengeACK: 87
+    TCPSYNChallenge: 87
+    TCPSpuriousRtxHostQueues: 24
+    TCPAutoCorking: 19095
+    TCPWantZeroWindowAdv: 54
+    TCPSynRetrans: 492
+    TCPOrigDataSent: 234400
+    TCPHystartTrainDetect: 1
+    TCPHystartTrainCwnd: 20
+    TCPHystartDelayDetect: 17
+    TCPHystartDelayCwnd: 720
+    TCPACKSkippedSeq: 8
+    TCPACKSkippedTimeWait: 1
+    TCPKeepAlive: 4129
+    TCPDelivered: 210141
+    TCPAckCompressed: 40980
+    TcpTimeoutRehash: 1810
+    TcpDuplicateDataRehash: 1
+    TCPDSACKRecvSegs: 634
+    TCPDSACKIgnoredDubious: 36
+IpExt:
+    InNoRoutes: 5
+    InMcastPkts: 2283
+    OutMcastPkts: 1485
+    InBcastPkts: 1879
+    OutBcastPkts: 24
+    InOctets: 417938481
+    OutOctets: 256727410
+    InMcastOctets: 255374
+    OutMcastOctets: 245170
+    InBcastOctets: 218414
+    OutBcastOctets: 1872
+    InNoECTPkts: 752555
+MPTcpExt:
+
+Top Processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    Jul21   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   Jul21   0:00  \_ [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   Jul21   0:00  \_ [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   Jul21   0:00  \_ [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   Jul21   0:00  \_ [netns]
+root           8  0.0  0.0      0     0 ?        I<   Jul21   0:00  \_ [kworker/0:0H-events_highpri]
+root          11  0.0  0.0      0     0 ?        I<   Jul21   0:00  \_ [mm_percpu_wq]
+root          12  0.0  0.0      0     0 ?        I    Jul21   0:00  \_ [rcu_tasks_kthread]
+root          13  0.0  0.0      0     0 ?        I    Jul21   0:00  \_ [rcu_tasks_rude_kthread]
+
+===== Log Analysis =====
+Recent Critical Events:
+Jul 22 11:13:41 AHMLPT2705 docker.dockerd[2120]: time="2024-07-22T11:13:41.606771937+05:30" level=error msg="fatal task error" error="No such image: my_microservice1:latest" module=node/agent/taskmanager node.id=eymmg95hvfjwp5aodtsgvt0i1 service.id=64xh03ux8olzwuigmi9vsi7ab task.id=q3mgy12dbjwsay3xqdrux09p8
+Jul 22 11:13:45 AHMLPT2705 docker.dockerd[2120]: time="2024-07-22T11:13:45.097403539+05:30" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+Jul 22 11:13:45 AHMLPT2705 docker.dockerd[2120]: time="2024-07-22T11:13:45.097470637+05:30" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+Jul 22 11:13:45 AHMLPT2705 docker.dockerd[2120]: time="2024-07-22T11:13:45.104234679+05:30" level=error msg="pulling image failed" error="pull access denied for my_microservice1, repository does not exist or may require 'docker login': denied: requested access to the resource is denied" module=node/agent/taskmanager node.id=eymmg95hvfjwp5aodtsgvt0i1 service.id=64xh03ux8olzwuigmi9vsi7ab task.id=epcra4ygwstzrl3swzfuqnbvp
+Jul 22 11:13:45 AHMLPT2705 docker.dockerd[2120]: time="2024-07-22T11:13:45.104626409+05:30" level=error msg="fatal task error" error="No such image: my_microservice1:latest" module=node/agent/taskmanager node.id=eymmg95hvfjwp5aodtsgvt0i1 service.id=64xh03ux8olzwuigmi9vsi7ab task.id=epcra4ygwstzrl3swzfuqnbvp
+Jul 22 11:13:45 AHMLPT2705 docker.dockerd[2120]: time="2024-07-22T11:13:45.105237680+05:30" level=error msg="pulling image failed" error="pull access denied for my_microservice1, repository does not exist or may require 'docker login': denied: requested access to the resource is denied" module=node/agent/taskmanager node.id=eymmg95hvfjwp5aodtsgvt0i1 service.id=64xh03ux8olzwuigmi9vsi7ab task.id=ls3zjfsl7crrsj32biqhhvvoc
+Jul 22 11:13:45 AHMLPT2705 docker.dockerd[2120]: time="2024-07-22T11:13:45.105662805+05:30" level=error msg="fatal task error" error="No such image: my_microservice1:latest" module=node/agent/taskmanager node.id=eymmg95hvfjwp5aodtsgvt0i1 service.id=64xh03ux8olzwuigmi9vsi7ab task.id=ls3zjfsl7crrsj32biqhhvvoc
+Jul 22 11:13:46 AHMLPT2705 docker.dockerd[2120]: time="2024-07-22T11:13:46.418895443+05:30" level=error msg="Not continuing with pull after error: errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n"
+Jul 22 11:13:46 AHMLPT2705 docker.dockerd[2120]: time="2024-07-22T11:13:46.425474294+05:30" level=error msg="pulling image failed" error="pull access denied for my_microservice1, repository does not exist or may require 'docker login': denied: requested access to the resource is denied" module=node/agent/taskmanager node.id=eymmg95hvfjwp5aodtsgvt0i1 service.id=64xh03ux8olzwuigmi9vsi7ab task.id=mlfoturq4kmlbdrxgqh2nrgu4
+Jul 22 11:13:46 AHMLPT2705 docker.dockerd[2120]: time="2024-07-22T11:13:46.425908326+05:30" level=error msg="fatal task error" error="No such image: my_microservice1:latest" module=node/agent/taskmanager node.id=eymmg95hvfjwp5aodtsgvt0i1 service.id=64xh03ux8olzwuigmi9vsi7ab task.id=mlfoturq4kmlbdrxgqh2nrgu4
+
+===== Health Checks =====
+Service Status:
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sun 2024-07-21 14:47:52 IST; 20h ago
+       Docs: https://httpd.apache.org/docs/2.4/
+   Main PID: 49006 (apache2)
+      Tasks: 55 (limit: 18802)
+     Memory: 5.1M
+        CPU: 613ms
+     CGroup: /system.slice/apache2.service
+             ├─49006 /usr/sbin/apache2 -k start
+             ├─49007 /usr/sbin/apache2 -k start
+             └─49009 /usr/sbin/apache2 -k start
+
+Jul 21 14:47:52 AHMLPT2705 systemd[1]: Starting The Apache HTTP Server...
+Jul 21 14:47:52 AHMLPT2705 apachectl[49005]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message
+Jul 21 14:47:52 AHMLPT2705 systemd[1]: Started The Apache HTTP Server.
+
+Connectivity Check:
+PING google.com (142.250.199.174) 56(84) bytes of data.
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=1 ttl=119 time=13.1 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=2 ttl=119 time=13.3 ms
+64 bytes from bom07s37-in-f14.1e100.net (142.250.199.174): icmp_seq=3 ttl=119 time=15.7 ms
+
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 13.139/14.053/15.673/1.148 ms
+
